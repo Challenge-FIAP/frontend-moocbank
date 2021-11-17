@@ -27,7 +27,7 @@ const Home = () => {
           <div className="bg-water-blue w-100 d-flex flex-column p-3">
             <p className="text-center">Aplicando</p>
             <p className="m-0 p-0">
-              Aqui na Mooc, você consegue acompanhar todo o processo de suas atividades de maneira bem simples através dos nossos dashboards intuitivos, as aplicações são seguras e nós prezamos pela integridade de nossos usuários
+              Aqui na Mooc, você consegue acompanhar todo o processo de suas atividades de maneira bem simples através dos nossos dashboards intuitivos, as aplicações são seguras e nós prezamos pela integridade de nossos usuários.
             </p>
           </div>
         </div>
