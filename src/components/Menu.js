@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const Menu = () => {
   return(
     <nav className="navbar w-100 bg-dark text-light p-4">
-      <ul className="m-0 p-0 mx-3 navbar-nav flex-row justify-content-between w-100">
+      <ul className="m-0 p-0 mx-3 navbar-nav flex-row justify-content-between align-items-center w-100">
         <Link className="navbar-brand text-light" to="/">
-          MOOC
+          <img src="./images/mooc_logo_branco.png" className="w-150px" alt="Logo Mooc Branco" />
         </Link>
         <li className="nav-item">
           <a href="#" className="nav-link text-light">Nosso Trabalho</a>

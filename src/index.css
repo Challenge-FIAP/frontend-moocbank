@@ -53,3 +53,11 @@ html, body, #root, .App {
 .bg-water-blue {
   background-color: var(--primary-water-blue);
 }
+
+.w-150px {
+  width: 150px;
+}
+
+.w-250px {
+  width: 250px;
+}

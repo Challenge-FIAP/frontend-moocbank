@@ -36,7 +36,9 @@ const Login = () => {
 
   return (
     <div className="d-flex flex-column justify-center align-center bg-green w-100 h-100">
-      <h1 className="text-center mb-4">MOOC</h1>
+      <h1 className="fs-4 text-center">
+        <img src="./images/mooc_logo.png" className="w-250px" alt="Logo da Mooc" />
+      </h1>
       <div className="container-sm p-5 bg-dark rounded-1 text-light">
         <h2 className="mb-5"> Login </h2>
         <form onSubmit={handleSubmit}>
