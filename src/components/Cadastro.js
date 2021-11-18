@@ -23,7 +23,7 @@ const Cadastro = () => {
   const postCadastro = async cadastro => {
     try {
       setIsLoading(true)
-      const response = await axios.post(`http://localhost:8080/api/user`, cadastro)
+      const response = await axios.put(`http://localhost:8080/api/user`, cadastro)
       if(!response || typeof response != "object") throw new Error("Retorno da API incorreto")
       setIsLoading(false)
     }catch(e) {
