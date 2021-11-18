@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import axios from "axios"
-import Input from "./Input"
-import Menu from "./Menu"
-import Footer from "./Footer"
+import Input from "../components/Input"
+import Menu from "../components/Menu"
+import Footer from "../components/Footer"
 
 const formData = {
   email: "",
@@ -22,8 +22,10 @@ const Cadastro = () => {
 
   const postCadastro = async cadastro => {
     try {
+      if(!cadastro.name || !cadastro.password) return false
       setIsLoading(true)
-      const response = await axios.post(`http://localhost:8080/api/user`, cadastro)
+      const filterCadastro = { nome: cadastro.name, idade: 21, documento: '688.822.310-89', senha: cadastro.password }
+      const response = await axios.post(`http://localhost:8080/api/user`, filterCadastro)
       if(!response || typeof response != "object") throw new Error("Retorno da API incorreto")
       setIsLoading(false)
     }catch(e) {
@@ -86,9 +88,10 @@ const Cadastro = () => {
           </div>
           <div className="col-md-3">
             <Input
-              name="phone"
-              onChange={e => setInput({ phone: e.target.value })}
-              label="Telefone"
+              name="password"
+              onChange={e => setInput({ password: e.target.value })}
+              label="Senha"
+              type="password"
             />
           </div>
         </div>

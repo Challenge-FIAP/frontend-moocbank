@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Input from "./Input"
+import Input from "../components/Input"
 import { Link } from 'react-router-dom';
 
 const formData = {
@@ -15,22 +15,22 @@ const Login = () => {
   }
 
   return (
-    <div className="d-flex flex-column justify-center align-center bg-green w-100 h-100">
+    <div className="d-flex flex-column justify-center align-center w-100 h-100">
       <h1 className="fs-4 text-center">
         <img src="./images/mooc_logo.png" className="w-250px" alt="Logo da Mooc" />
       </h1>
       <div className="container-sm p-5 bg-dark rounded-1 text-light">
         <h2 className="mb-5"> Login </h2>
         <form>
-          <div className="row">
-            <div className="form-group col-md-6">
+          <div className="row d-flex flex-column">
+            <div className="form-group col-md-12">
               <Input
                 name="email"
                 onChange={e => setInput({ email: e.target.value })}
                 label="Email"
               />
             </div>
-            <div className="form-group col-md-6">
+            <div className="form-group col-md-12">
               <Input
                 name="password"
                 type="password"
@@ -49,7 +49,7 @@ const Login = () => {
           </div>
         </form>
       </div>
-      <p className="text-light text-center">Todos os direitos reservados | Mooc 2021 Corporation </p>
+      <p className="text-center">Todos os direitos reservados | Mooc 2021 Corporation </p>
     </div>
   )
 }

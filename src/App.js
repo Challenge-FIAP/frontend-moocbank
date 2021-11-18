@@ -1,9 +1,10 @@
-import Login from "./components/Login"
-import Cadastro from "./components/Cadastro"
-import Home from "./components/Home"
-import QuemSomos from "./components/QuemSomos"
+import Login from "./views/Login"
+import Cadastro from "./views/Cadastro"
+import Home from "./views/Home"
+import QuemSomos from "./views/QuemSomos"
+import Admin from "./views/Admin"
 
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
@@ -13,12 +14,10 @@ function App() {
         <Route path='/register' element={<Cadastro />} />
         <Route path='/home' element={<Home />} />
         <Route path='/about' element={<QuemSomos />} />
+        <Route path='/admin' element={<Admin />} />
         <Route path='*' element={<Login />} />
       </Routes>
     </main>
-    // <div className="App container-fluid bg-light-green">
-    //   <Login />
-    // </div>
   )
 }
 
