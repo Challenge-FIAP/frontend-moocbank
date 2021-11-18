@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import axios from "axios"
 import Menu from "../components/Menu"
 import Footer from "../components/Footer"
+import Editar from "../components/Editar"
 
 const Admin = () => {
   const [listaClientes, setListaClientes] = useState([])
@@ -60,6 +61,7 @@ const Admin = () => {
               })}
             </tbody>
           </table>
+          <Editar />
         </>
         }
       </div>
