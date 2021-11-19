@@ -61,6 +61,7 @@ const Editar = () => {
       filteredData.nome = filteredData.nome ? filteredData.nome : client.nome
       filteredData.idade = filteredData.idade ? filteredData.idade : client.idade
       filteredData.documento = filteredData.documento ? filteredData.documento : client.documento
+      filteredData.senha=filteredData.senha ? filteredData.senha: client.senha
       const response = await axios.put(`http://localhost:8080/api/user`, filteredData)
       if(!response || typeof response != "object") throw new Error("Retorno da API incorreto")
       const { status } = response
