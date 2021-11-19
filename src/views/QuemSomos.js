@@ -11,10 +11,10 @@ const QuemSomos = () => {
           <h1 className="fs-3">Conheça nosso time</h1>
         </div>
         <div className="d-flex flex-wrap justify-content-center align-items-center w-100 flex-grow-1 my-3">
-          <img src="./images/grande_beicola.jpg" className="img-responsive m-3" alt="Foto do Beiçola" />
-          <img src="./images/grande_beicola.jpg" className="img-responsive m-3" alt="Foto do Beiçola" />
-          <img src="./images/grande_beicola.jpg" className="img-responsive m-3" alt="Foto do Beiçola" />
-          <img src="./images/grande_beicola.jpg" className="img-responsive m-3" alt="Foto do Beiçola" />
+          <img src="./images/Augusto.png" className="img-responsive m-3" alt="Foto do Augusto" />
+          <img src="./images/Marcos.png" className="img-responsive m-3" alt="Foto do Marcos" />
+          <img src="./images/Matheus.png" className="img-responsive m-3" alt="Foto do Matheus" />
+          <img src="./images/Vitor.png" className="img-responsive m-3" alt="Foto do Vitor" />
         </div>
       </div>
       <Footer />
