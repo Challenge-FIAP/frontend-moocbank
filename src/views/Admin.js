@@ -12,7 +12,6 @@ const Admin = () => {
   const getClientes = async () => {
     try {
       const response = await axios.get("http://localhost:8080/api/user")
-      console.log(response)
       if(!response || typeof response != "object") throw new Error("Retorno da API incorreto")
       const { data } = response
       setIsLoading(false)
