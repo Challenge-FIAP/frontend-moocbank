@@ -8,7 +8,7 @@ const Home = () => {
       <Menu />
       <div className="flex-grow-1 container d-flex flex-wrap w-100">
         <div className="d-flex flex-wrap justify-content-center align-items-center w-100">
-          <h1 className="me-5">O que é a MOOC</h1>
+          <h1 className="me-5">O que é a MOOC?</h1>
           <img className="img-fluid" src="./images/imagem.jpg" alt="Imagem com árvores, céu e sol" />
         </div>
         <div className="d-flex justify-content-center w-100">
